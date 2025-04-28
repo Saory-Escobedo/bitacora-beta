@@ -1,0 +1,353 @@
+.menu
+{
+            margin: 0;
+            width: 1950px;
+            height: 80px;
+            position:sticky;
+            top:0;
+            overflow: hidden;
+            background-color: #ffffff;
+            color: #ffffff;
+}
+h1
+{ 
+            margin: 30px;
+            text-align:center;
+            font-size: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h2
+{
+            margin: 30px;
+            text-align:center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.selecc
+{
+            text-align: right;
+            float: left;
+            margin-top: -90px;
+            margin-left: 590px;
+}
+a{
+    text-decoration: none; color: #000000;
+}
+.texesp{
+    margin-left: 20px;  /*preguntar si esta etiqueta era valida, esta en menu*/
+}
+.negro
+{
+    margin-right: 30px;
+    width: 1350px;
+    height: 600px;
+    background: #000000; 
+}
+p{  
+
+    color: #ffffff;
+    margin: 30px;
+    text-align:center;
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img2{
+margin-left: 130px;
+}
+
+.espa{
+    margin-top: 100px;
+}
+.negro2
+{
+    margin-left: 170px;
+    width: 1000px;
+    height: 100px;
+    background: #000000; 
+}
+li{
+    text-decoration: none; color: #000000;
+}
+
+ul{
+    text-decoration: none; color: #000000;
+}
+.cuadrado{
+          width: 500px; height: 900px; /*centrar elementos*/
+          /*background-color: aqua;*/
+          background: linear-gradient(45deg,#553375 10%,#0a0113 50%); /*difuminacion lineal de izq a der y sele pone un gradpo de iclinacion, (en este caso 45)*/
+          margin-left: auto;
+          margin-right: auto;
+          display: block;
+          padding: 30px; /*margenes para adentro*/
+          border: 10px solid #0a0113; /*bordes de color*/
+}
+h3{
+    margin: 30px;
+            text-align:center;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+svg{
+    text-align:center;
+}
+.cuadro3{
+    background: #000000; 
+}
+.uno{
+    width: 190px;
+    height: 108px;
+    background-color: #ac9c4c;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1; /*capa -1 se va hasta abajo*/
+}
+
+.dos{
+    width: 100px;
+    height: 108px;
+    background-color: #493e05;
+    position: absolute;
+}
+       
+.pirili{
+    width: 200px;height: 200px;
+    background-color: rgb(219, 141, 141);
+    animation: mover 2s infinite;/*"mover" es el nombre  e la animacion y lo de 2 es los segundos que va a durar y tendra un ciclo infinito*/
+}
+        @keyframes mover{
+        0%{transform: translateX(0);}
+        50%{transform: translateX(100px);}
+        100%{transform: translateX(0);}
+        }
+
+.roto{
+    width: 200px;height: 200px;
+    background-color: rgb(184, 114, 114);
+    animation: rotar 2s infinite;
+}
+
+        @keyframes rotar {
+        from{transform:rotate(0deg);}
+        to{transform:rotate(360deg);}
+        }
+
+.escalar{
+    width: 200px;height: 200px;
+    background-color: rgb(184, 114, 114);
+    animation: escal 2s infinite;
+    margin-left: 100px;
+}
+
+@keyframes escal {
+    0%{transform: scale(1);}
+    50%{transform: scale(2);}/*el numero es que tantas veces mas grande es o se hara */
+    100%{transform: scale(1);}
+}
+.galeria{
+    overflow: hidden;
+    height: 510px ;width: 728px;
+}
+.slide-wrapper{
+    width: 2910px;
+    animation: slide 18s ease infinite;/*ease es para que sea mas despacio*/
+}
+.slide{
+    float: left;
+    height: 510px; width: 728px;
+}
+.resaltado {
+    color: black;
+    transition: color 0.3s ease;
+  }
+
+  .resaltado:hover {
+    color: orange;
+  }
+
+
+    p {
+        color: black; /* Asegúrate de que el texto sea visible */
+        font-size: 16px;
+    }
+
+    .resaltado {
+        color: red; /* Para que la palabra resaltada sea claramente visible */
+    }
+
+    #slideshow {
+        text-align: center;
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin-bottom: 400px;
+      }
+       
+      .slide-wrapper {
+        width: 2912px;
+        animation: slide 18s ease infinite;
+      }
+       
+      .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+      }
+       
+      .slide:nth-child(1) { /*Elementos de una etiqueta que estan dentro*/
+        background-color: rgb(216, 41, 243);
+      }
+       
+      .slide:nth-child(2) {
+        background-color: coral;
+      }
+       
+      .slide:nth-child(3) {
+        background-color: greenyellow;
+      }
+       
+      .slide:nth-child(4) {
+        background-color: brown;
+      }
+       
+      @keyframes slide {
+        20% {margin-left: 0px;}
+        30% {margin-left: -728px;}
+        50% {margin-left: -728px;}
+        60% {margin-left: -1456px;}
+        70% {margin-left: -1456px;}
+        80% {margin-left: -2184px;}
+        90% {margin-left: -2184px;}
+      }
+
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+  
+      /* Ejemplo :focus */
+      input:focus {
+        border-color: green;
+        background-color: lightyellow;
+      }
+  
+      /* Ejemplo :active */
+      button:active {
+        background-color: blue;
+        color: white;
+      }
+  
+      /* Ejemplo :nth-child */
+      ul li:nth-child(odd) {
+        background-color: lightgray;
+      }
+      
+      ul li:nth-child(even) {
+        background-color: lightblue;
+      }
+  
+      /* Ejemplo :first-child y :last-child */
+      ul li:first-child {
+        font-weight: bold;
+      }
+  
+      ul li:last-child {
+        color: red;
+      }
+  
+      /* Ejemplo :not() */
+      p:not(.importante) {
+        color: gray;
+      }
+  
+      /* Ejemplo :checked */
+      input:checked {
+        background-color: lightgreen;
+      }
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:active {
+  background-color: #2e7d32; 
+  transform: scale(0.98); 
+}
+
+
+img[src^="https://atlasanimal.com/wp-content/uploads/2021/02/capibara-768x512.jpg"] {
+    border: 5px solid green;
+  }
+  
+/* Descendiente */
+div p {
+    color: blue;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
+  }
+  
+  /* Hijo directo */
+  div > p {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  /* Hermano directo */
+  h2 + p {
+    background-color: lightyellow;
+    border: 2px dashed orange;
+  }
+  
+  /* Hermanos generales */
+  h3 ~ p {
+    color: purple;
+    background-color: lavender;
+    padding: 5px;
+  }
+   
+  .hermano{
+    width: 80px;
+    height: 80px;
+    background-color: brown;
+    margin: 10px;
+    display: inline-block;/*si o si en la bitacora*/
+
+}
+.btn{
+    width: 200px;
+    background-color: rgb(43, 35, 25);
+    color: black;
+    padding: 10px;
+    transition: background-color 0.3s ;/*si o si en la bitacora*/
+}
+.btn:hover{
+    background-color: blueviolet;
+}
+
+ 
+.hermano{
+  width: 80px;
+  height: 80px;
+  background-color: brown;
+  margin: 10px;
+  display: inline-block;/*si o si en la bitacora*/
+
+}
+.btn{
+  width: 200px;
+  background-color: rgb(43, 35, 25);
+  color: black;
+  padding: 10px;
+  transition: background-color 0.3s ;/*si o si en la bitacora*/
+}
+.btn:hover{
+  background-color: blueviolet;
+}
+  
